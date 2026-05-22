@@ -77,7 +77,7 @@ REACH_STATES: [
   {id:"INCT",name:"Chhattisgarh",grain:"rice",pds:{total:20077000,wheat:0},icds:{total:2205816,wheat:1930782},mdm:{total:2404929,wheat:0}},
   {id:"INMH",name:"Maharashtra",grain:"both",pds:{total:70017000,wheat:39286520},icds:{total:5092829,wheat:4534478},mdm:{total:8867355,wheat:0}},
   {id:"INGJ",name:"Gujarat",grain:"both",pds:{total:36584000,wheat:14793190},icds:{total:3081936,wheat:2635097},mdm:{total:4044689,wheat:4044689}},
-  {id:"INGA",name:"Goa",grain:"rice",pds:{total:532000,wheat:84774},icds:{total:44796,wheat:37905},mdm:{total:156947,wheat:156947}},
+  {id:"INGA",name:"Goa",grain:"rice",pds:{total:532000,wheat:84774},icds:{total:44796,wheat:304},mdm:{total:156947,wheat:156947}},
   {id:"INDH",name:"Dadra & Nagar Haveli",grain:"both",pds:{total:269000,wheat:25172},icds:{total:24539,wheat:11092},mdm:{total:60904,wheat:60904}},
   {id:"INOR",name:"Odisha",grain:"rice",pds:{total:32517000,wheat:0},icds:{total:3162696,wheat:2717437},mdm:{total:4532042,wheat:0}},
   {id:"INAP",name:"Andhra Pradesh",grain:"rice",pds:{total:26822000,wheat:316505},icds:{total:1891839,wheat:1567367},mdm:{total:2312938,wheat:0}},
