@@ -1329,21 +1329,18 @@ function renderScenario(){
     <!-- Evidence footnote -->
     <div style="background:#f9f7f2;border-radius:12px;border:1px solid #e4e0d8;padding:18px 20px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#444;margin-bottom:10px;">About this projection</div>
-      <div style="font-size:14px;color:#222;line-height:1.8;margin-bottom:14px;">
-        Studies show that people who regularly eat iron-fortified wheat flour are about
-        <strong>27% less likely to become anaemic</strong> than those eating unfortified flour.
-        That means: if 60 out of 100 people in a state are anaemic today, around
-        <strong>16 of those 60 people</strong> could be lifted out of anaemia &mdash;
-        bringing the figure down to roughly 44 out of 100.
-        The actual impact will depend on how much wheat flour people eat and how widespread anaemia already is.
+      <div style="font-size:15px;color:#1a1a1a;line-height:1.9;margin-bottom:14px;background:#fff8e7;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;">
+        Studies show that people who regularly eat iron-fortified wheat flour are <strong>27% less likely to become anaemic</strong> than those eating regular flour.<br><br>In a state where 60 out of every 100 people are anaemic, fortification could lift around <strong>16 of those 60 people</strong> out of anaemia &mdash; bringing the number down to roughly 44 out of 100.<br><br>The exact impact will vary depending on how much wheat flour people eat and the current level of anaemia in that state.
       </div>
       <div style="border-top:1px solid #e4e0d8;margin-bottom:12px;"></div>
       <div style="font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#444;margin-bottom:5px;">For the technically minded</div>
       <div style="font-size:12px;color:#333;line-height:1.7;">
-        The 27% figure is a <em>relative risk reduction</em> (RR&nbsp;0.73, 95%&nbsp;CI&nbsp;0.55&ndash;0.97)
-        from a Cochrane systematic review of 5 randomised trials (n=2,315). It applies to the proportion
-        of people already anaemic &mdash; not the whole population &mdash; which is why a 27% reduction in
-        risk produces a smaller percentage-point drop in overall prevalence.
+        The 27% is a <em>relative risk reduction</em> (RR 0.73, 95% CI 0.55&ndash;0.97),
+        meaning anaemic people who eat fortified flour are 27% less likely to remain anaemic
+        than those who eat regular flour. Because it applies only to those already anaemic
+        &mdash; not the full population &mdash; the overall prevalence drops by fewer
+        percentage points than the 27% figure might suggest.
+        This comes from a Cochrane review of 5 randomised trials (2,315 participants, 2021).
       </div>
       <div style="margin-top:8px;font-size:11px;color:#444;">
         <strong>Source:</strong> Field MS, Mithra P, Pe&ntilde;a-Rosas JP.
@@ -1669,18 +1666,14 @@ const STATE_PROGRAMMES = [
    since:"January 2020", until:null,
    note:"Distributing fortified wheat flour through PDS since January 2020.",
    citation:"Wakhloo, 2025",
-   url:"https://doi.org/10.1111/mcn.12669",
-   url:"https://doi.org/10.1111/mcn.12669",
-   url:"https://apjcn.qdu.edu.cn/23_5_3.pdf",
-   url:"https://nutritionconnect.org/sites/default/files/uploads/resources/2019-04/Large%20Scale%20Food%20Fortification%20in%20India.%20The%20Journey%20So%20Far%20and%20the%20Road%20Ahead..pdf",
-   url:"https://ffinetwork.org/wp-content/uploads/2025/05/FFI_2018_Annual_Report-1-1.pdf",
-   url:"https://ladakh.gov.in/ladakh-administration-to-provide-fortified-wheat-fortified-salt-oil-and-milk-to-be-promoted-principal-secretary-kotwal/",
-   url:"https://southasia.ifpri.info/files/2025/12/3.-Mihika-Wakhloo_UPDATED.pdf"},
+   url:"https://southasia.ifpri.info/files/2025/12/3.-Mihika-Wakhloo_UPDATED.pdf"
+  },
   {id:"INLA", name:"Ladakh", status:"active",
    scheme:"PDS", vehicle:"Fortified wheat flour",
    since:"December 2023", until:null,
    note:"Launched fortified wheat flour in PDS in December 2023, covering all PDS beneficiaries across the UT.",
-   citation:"Government of Ladakh, 2023"},
+   citation:"Government of Ladakh, 2023",
+   url:"https://ladakh.gov.in/ladakh-administration-to-provide-fortified-wheat-fortified-salt-oil-and-milk-to-be-promoted-principal-secretary-kotwal/"},
   {id:"INKL", name:"Kerala", status:"active",
    scheme:"PDS (NPS & NPNS)", vehicle:"Fortified atta",
    since:"July 2017", until:null,
@@ -1691,12 +1684,14 @@ const STATE_PROGRAMMES = [
    scheme:"PDS", vehicle:"Fortified wheat flour",
    since:"2018", until:"2023",
    note:"Distributed fortified wheat flour through PDS with technical support of FFI until 2023.",
-   citation:"Food Fortification Initiative, 2018"},
+   citation:"Food Fortification Initiative, 2018",
+   url:"https://ffinetwork.org/wp-content/uploads/2025/05/FFI_2018_Annual_Report-1-1.pdf"},
   {id:"INWB", name:"West Bengal", status:"stopped",
    scheme:"PDS", vehicle:"Fortified wheat flour",
    since:"2017", until:"2024",
    note:"Among the first states to fortify wheat flour; pilot started in Darjeeling and continued state-wide until 2024.",
-   citation:"Nutrition Connect"},
+   citation:"Nutrition Connect",
+   url:"https://nutritionconnect.org/sites/default/files/uploads/resources/2019-04/Large%20Scale%20Food%20Fortification%20in%20India.%20The%20Journey%20So%20Far%20and%20the%20Road%20Ahead..pdf"},
   {id:"INAP", name:"Andhra Pradesh", status:"stopped",
    scheme:"PDS", vehicle:"Fortified chakki atta",
    since:"July 2023", until:"September 2024",
@@ -1706,17 +1701,20 @@ const STATE_PROGRAMMES = [
    scheme:"PDS", vehicle:"Fortified flour",
    since:"2012", until:"~2014",
    note:"Started distributing fortified flour through PDS in 2012 but stopped later.",
-   citation:"Bhagwat et al., 2014"},
+   citation:"Bhagwat et al., 2014",
+   url:"https://apjcn.qdu.edu.cn/23_5_3.pdf"},
   {id:"INTN", name:"Tamil Nadu", status:"stopped",
    scheme:"PDS", vehicle:"Fortified wheat flour",
    since:"2008", until:"2012",
    note:"Distributed fortified wheat flour through PDS between 2008 and 2012.",
-   citation:"Chakrabarti et al., 2019"},
+   citation:"Chakrabarti et al., 2019",
+   url:"https://doi.org/10.1111/mcn.12669"},
   {id:"INPB", name:"Punjab", status:"stopped",
    scheme:"PDS", vehicle:"Fortified wheat flour",
    since:"2008", until:"2012",
    note:"Distributed fortified wheat flour through PDS between 2008 and 2012.",
-   citation:"Chakrabarti et al., 2019"},
+   citation:"Chakrabarti et al., 2019",
+   url:"https://doi.org/10.1111/mcn.12669"},
 ];
 
 const FH_PROJECTS=[
