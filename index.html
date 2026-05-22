@@ -12,7 +12,7 @@ body{font-family:Calibri,'Segoe UI',sans-serif;background:#f4f1eb;color:#1a1a1a;
 /* Header */
 .header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:18px;}
 .brand{font-size:17px;font-weight:700;color:#0a3d62;letter-spacing:-.3px;}
-.brand-sub{font-size:11px;color:#aaa;margin-top:2px;}
+.brand-sub{font-size:11px;color:#666;margin-top:2px;}
 .tab-nav{display:flex;border:2px solid #0a3d62;border-radius:9px;overflow:hidden;}
 .tab-btn{padding:7px 16px;font-size:13px;font-family:Calibri,sans-serif;border:none;border-right:1.5px solid #0a3d62;background:#fff;color:#0a3d62;cursor:pointer;font-weight:700;transition:all .15s;}
 .tab-btn:last-child{border-right:none;}
@@ -26,13 +26,13 @@ body{font-family:Calibri,'Segoe UI',sans-serif;background:#f4f1eb;color:#1a1a1a;
 .hs-item:hover{background:#f9f7f2;}
 .hs-item.active{background:#f9f7f2;box-shadow:inset 0 -3px 0 currentColor;}
 .hs-num{font-size:30px;font-weight:700;line-height:1;}
-.hs-lbl{font-size:11px;color:#888;margin-top:3px;}
+.hs-lbl{font-size:11px;color:#555;margin-top:3px;}
 .hs-sub{font-size:10px;font-weight:700;margin-top:2px;}
 
 /* Controls */
 .controls-row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end;margin-bottom:14px;}
 .ctrl-group{display:flex;flex-direction:column;gap:4px;}
-.ctrl-label{font-size:10px;font-weight:700;letter-spacing:.08em;color:#aaa;text-transform:uppercase;}
+.ctrl-label{font-size:10px;font-weight:700;letter-spacing:.08em;color:#666;text-transform:uppercase;}
 .ctrl-divider{width:1px;background:#e0dbd2;align-self:stretch;margin:0 4px;}
 .seg{display:flex;gap:3px;}
 .seg-btn{padding:5px 11px;font-size:12px;font-family:Calibri,sans-serif;border-radius:6px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-weight:700;color:#555;transition:all .15s;}
@@ -40,7 +40,7 @@ body{font-family:Calibri,'Segoe UI',sans-serif;background:#f4f1eb;color:#1a1a1a;
 .seg-btn.teal.on{background:#0097a7;color:#fff;border-color:#0097a7;}
 .seg-btn.green.on{background:#1b6b3a;color:#fff;border-color:#1b6b3a;}
 .seg-btn.purple.on{background:#7c3aed;color:#fff;border-color:#7c3aed;}
-.seg-btn:hover:not(.on):not(:disabled){background:#f5f3ee;border-color:#bbb;}
+.seg-btn:hover:not(.on):not(:disabled){background:#f5f3ee;border-color:#777;}
 .seg-btn:disabled{opacity:.3;cursor:default;}
 
 /* Main layout: map + panel side by side always */
@@ -50,12 +50,12 @@ body{font-family:Calibri,'Segoe UI',sans-serif;background:#f4f1eb;color:#1a1a1a;
 .map-col{position:relative;}
 .legend{display:flex;align-items:center;gap:8px;margin-top:6px;}
 .legend-bar{height:7px;flex:1;border-radius:4px;}
-.legend-lbl{font-size:10px;color:#aaa;}
-.map-note{font-size:10px;color:#bbb;margin-top:4px;line-height:1.4;}
+.legend-lbl{font-size:10px;color:#666;}
+.map-note{font-size:10px;color:#777;margin-top:4px;line-height:1.4;}
 
 /* State panel — always visible */
 .state-panel{display:flex;flex-direction:column;gap:12px;}
-.panel-placeholder{font-size:12px;color:#bbb;font-style:italic;border:1.5px dashed #ddd;border-radius:12px;padding:24px 14px;text-align:center;line-height:1.7;background:#fff;}
+.panel-placeholder{font-size:12px;color:#777;font-style:italic;border:1.5px dashed #ddd;border-radius:12px;padding:24px 14px;text-align:center;line-height:1.7;background:#fff;}
 
 /* State card */
 .state-card{background:#fff;border-radius:12px;border:1.5px solid #e4e0d8;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);}
@@ -65,7 +65,7 @@ body{font-family:Calibri,'Segoe UI',sans-serif;background:#f4f1eb;color:#1a1a1a;
 .sc-body{padding:12px 13px;display:flex;flex-direction:column;gap:10px;}
 
 /* Anaemia section */
-.sc-section-head{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#aaa;padding-bottom:6px;border-bottom:1px solid #f0ede6;margin-bottom:2px;}
+.sc-section-head{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#666;padding-bottom:6px;border-bottom:1px solid #f0ede6;margin-bottom:2px;}
 .sc-demo-row{display:flex;align-items:center;gap:6px;padding:3px 0;}
 .sc-demo-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
 .sc-demo-lbl{font-size:11px;color:#666;flex:1;}
@@ -79,18 +79,18 @@ body{font-family:Calibri,'Segoe UI',sans-serif;background:#f4f1eb;color:#1a1a1a;
 .spark-row{display:flex;align-items:flex-end;gap:3px;height:32px;margin:4px 0 1px;}
 .spark-b{border-radius:2px 2px 0 0;min-width:14px;flex:1;}
 .spark-lbls{display:flex;gap:3px;}
-.spark-lbl{font-size:9px;color:#ccc;flex:1;text-align:center;}
+.spark-lbl{font-size:9px;color:#888;flex:1;text-align:center;}
 
 /* Iron def section */
 .irondef-val{font-size:22px;font-weight:700;color:#7c3aed;}
-.irondef-sub{font-size:10px;color:#aaa;margin-top:2px;}
+.irondef-sub{font-size:10px;color:#666;margin-top:2px;}
 
 /* Rank list */
 .rank-section{background:#fff;border-radius:12px;border:1.5px solid #e4e0d8;padding:12px 13px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
-.rank-title{font-size:10px;font-weight:700;letter-spacing:.07em;color:#aaa;text-transform:uppercase;margin-bottom:7px;}
+.rank-title{font-size:10px;font-weight:700;letter-spacing:.07em;color:#666;text-transform:uppercase;margin-bottom:7px;}
 .rank-row{display:flex;align-items:center;gap:5px;padding:3px 5px;border-radius:6px;cursor:pointer;transition:background .1s;}
 .rank-row:hover{background:#f0ede6;}
-.rank-num{font-size:10px;color:#ccc;width:16px;text-align:right;flex-shrink:0;}
+.rank-num{font-size:10px;color:#888;width:16px;text-align:right;flex-shrink:0;}
 .rank-name{flex:1;font-size:11px;color:#333;}
 .rank-val{font-size:11px;font-weight:700;}
 .rank-chip{display:inline-flex;align-items:center;font-size:9px;font-weight:700;padding:1px 4px;border-radius:8px;margin-left:2px;}
@@ -98,9 +98,9 @@ body{font-family:Calibri,'Segoe UI',sans-serif;background:#f4f1eb;color:#1a1a1a;
 /* Tooltip */
 #tooltip{display:none;position:fixed;background:#fff;border:1px solid #e4e0d8;border-radius:10px;padding:11px 14px;font-size:12px;z-index:999;pointer-events:none;min-width:210px;max-width:260px;box-shadow:0 6px 22px rgba(0,0,0,.13);}
 .tip-name{font-weight:700;font-size:13px;color:#0a3d62;margin-bottom:8px;}
-.tip-section{font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin:7px 0 4px;}
+.tip-section{font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#666;margin:7px 0 4px;}
 .tip-row{display:flex;justify-content:space-between;gap:12px;margin-bottom:2px;}
-.tip-hint{font-size:10px;color:#ccc;margin-top:7px;padding-top:7px;border-top:1px solid #f0ede6;}
+.tip-hint{font-size:10px;color:#888;margin-top:7px;padding-top:7px;border-top:1px solid #f0ede6;}
 
 /* Tabs 2 & 3 */
 .supply-btn{padding:10px 22px;font-size:14px;font-weight:700;background:#0a3d62;color:#fff;border:none;border-radius:9px;cursor:pointer;font-family:Calibri,sans-serif;transition:background .2s;}
@@ -120,7 +120,7 @@ select{font-size:13px;padding:6px 10px;border-radius:8px;border:1.5px solid #ddd
 .summary-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:8px;}
 .sum-card{background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:12px 14px;box-shadow:0 1px 4px rgba(0,0,0,.05);}
 .sum-card-num{font-size:22px;font-weight:700;line-height:1.2;}
-.sum-card-lbl{font-size:11px;color:#888;margin-top:3px;}
+.sum-card-lbl{font-size:11px;color:#555;margin-top:3px;}
 .sum-card-sub{font-size:10px;font-weight:700;margin-top:2px;}
 
 /* Scheme toggle */
@@ -129,7 +129,7 @@ select{font-size:13px;padding:6px 10px;border-radius:8px;border:1.5px solid #ddd
 /* Table */
 .reach-table-wrap{background:#fff;border-radius:12px;border:1px solid #e4e0d8;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05);}
 .reach-table{width:100%;border-collapse:collapse;font-size:13px;}
-.reach-table th{background:#f4f1eb;padding:10px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#888;border-bottom:1px solid #e4e0d8;}
+.reach-table th{background:#f4f1eb;padding:10px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#555;border-bottom:1px solid #e4e0d8;}
 .reach-table th.num{text-align:right;}
 .reach-table td{padding:10px 14px;border-bottom:1px solid #f0ede6;vertical-align:middle;}
 .reach-table td.num{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;}
@@ -158,15 +158,15 @@ select{font-size:13px;padding:6px 10px;border-radius:8px;border:1.5px solid #ddd
 .rsc-grain{font-size:11px;opacity:.75;margin-top:2px;}
 .rsc-body{padding:12px 13px;display:flex;flex-direction:column;gap:10px;}
 .rsc-scheme{display:flex;flex-direction:column;gap:4px;}
-.rsc-scheme-head{font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#aaa;}
+.rsc-scheme-head{font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#666;}
 .rsc-row{display:flex;justify-content:space-between;align-items:center;font-size:12px;}
 .rsc-val{font-weight:700;font-size:13px;}
-.rsc-sub{font-size:10px;color:#aaa;}
+.rsc-sub{font-size:10px;color:#666;}
 .rsc-bar-wrap{height:6px;background:#f0ede6;border-radius:3px;overflow:hidden;margin-top:3px;}
 .rsc-bar-fill{height:100%;border-radius:3px;}
 
 /* Source note */
-.source-note{font-size:10px;color:#bbb;line-height:1.5;margin-top:4px;}
+.source-note{font-size:10px;color:#777;line-height:1.5;margin-top:4px;}
 
 </style>
 </head>
@@ -268,7 +268,7 @@ REACH_STATES: [
   {id:"INCT",name:"Chhattisgarh",grain:"rice",pds:{total:20077000,wheat:0},icds:{total:2205816,wheat:1930782},mdm:{total:2404929,wheat:0}},
   {id:"INMH",name:"Maharashtra",grain:"both",pds:{total:70017000,wheat:39286520},icds:{total:5092829,wheat:4534478},mdm:{total:8867355,wheat:0}},
   {id:"INGJ",name:"Gujarat",grain:"both",pds:{total:36584000,wheat:14793190},icds:{total:3081936,wheat:2635097},mdm:{total:4044689,wheat:4044689}},
-  {id:"INGA",name:"Goa",grain:"rice",pds:{total:532000,wheat:84774},icds:{total:44796,wheat:37905},mdm:{total:156947,wheat:156947}},
+  {id:"INGA",name:"Goa",grain:"rice",pds:{total:532000,wheat:84774},icds:{total:44796,wheat:304},mdm:{total:156947,wheat:156947}},
   {id:"INDH",name:"Dadra & Nagar Haveli",grain:"both",pds:{total:269000,wheat:25172},icds:{total:24539,wheat:11092},mdm:{total:60904,wheat:60904}},
   {id:"INOR",name:"Odisha",grain:"rice",pds:{total:32517000,wheat:0},icds:{total:3162696,wheat:2717437},mdm:{total:4532042,wheat:0}},
   {id:"INAP",name:"Andhra Pradesh",grain:"rice",pds:{total:26822000,wheat:316505},icds:{total:1891839,wheat:1567367},mdm:{total:2312938,wheat:0}},
@@ -608,7 +608,7 @@ function buildStatePanel(s){
       <span class="sc-demo-val" style="color:${d.color};">${v!==null?v.toFixed(1)+"%":"n/a"}</span>
       ${chip}
     </div>
-    ${n?`<div style="font-size:10px;color:#bbb;padding-left:14px;margin-top:-2px;margin-bottom:3px;">≈ ${n} people</div>`:""}`;
+    ${n?`<div style="font-size:10px;color:#777;padding-left:14px;margin-top:-2px;margin-bottom:3px;">≈ ${n} people</div>`:""}`;
   }).join("");
 
   // Sparkbars for highlighted demo
@@ -628,7 +628,7 @@ function buildStatePanel(s){
       return `<div class="spark-b" style="height:${h}px;background:${fcolor};opacity:${i===S.round?1:.4};border-radius:2px 2px 0 0;"></div>`;
     }).join("");
     sparkHtml=`<div style="margin-top:6px;padding:8px 10px;background:#f9f7f2;border-radius:8px;">
-      <div style="font-size:9px;color:#aaa;margin-bottom:4px;">Trend across rounds</div>
+      <div style="font-size:9px;color:#666;margin-bottom:4px;">Trend across rounds</div>
       <div class="spark-row">${bars}</div>
       <div class="spark-lbls"><span class="spark-lbl">N3</span><span class="spark-lbl">N4</span><span class="spark-lbl">N5</span></div>
     </div>`;
@@ -783,30 +783,31 @@ function renderHeadline(){
   const r=S.round;
   const rl=["NFHS-3","NFHS-4","NFHS-5"][r];
   const items=[
-    {val:NATIONAL.anaemiaW[r],lbl:"women anaemic · "+rl,
+    {val:NATIONAL.anaemiaW[r],icon:'<svg viewBox="0 0 24 40" width="22" height="36" style="display:inline-block;vertical-align:middle;">\n  <!-- head -->\n  <ellipse cx="12" cy="5" rx="4" ry="4.5" fill="currentColor"/>\n  <!-- dupatta/hair suggestion -->\n  <path d="M8 7 Q4 10 5 16" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.6"/>\n  <!-- body/blouse -->\n  <path d="M8 9 Q12 8 16 9 L17 18 Q12 20 7 18 Z" fill="currentColor"/>\n  <!-- sari drape -->\n  <path d="M7 18 Q4 22 5 30 Q8 34 12 34 Q16 34 19 30 Q20 22 17 18 Q12 20 7 18Z" fill="currentColor"/>\n  <!-- sari pleats hint -->\n  <path d="M10 20 Q11 27 10 33 M12 19 Q13 27 12 34 M14 20 Q15 27 14 33" stroke="white" stroke-width="0.5" opacity="0.4" fill="none"/>\n  <!-- feet -->\n  <ellipse cx="10" cy="37" rx="2.5" ry="1.5" fill="currentColor" opacity="0.8"/>\n  <ellipse cx="14" cy="37" rx="2.5" ry="1.5" fill="currentColor" opacity="0.8"/>\n</svg>',lbl:"Anaemia prevalence in women · "+rl,
      sub:NATIONAL.anaemiaW[r]?fmtIN(1400e6*0.262*NATIONAL.anaemiaW[r]/100)+" women":null,
      color:"#dc6059", src:"nfhs", demo:"women"},
-    {val:NATIONAL.anaemiaC[r],lbl:"children anaemic · "+rl,
+    {val:NATIONAL.anaemiaC[r],icon:'<svg viewBox="0 0 20 34" width="18" height="30" style="display:inline-block;vertical-align:middle;">\n  <!-- head -->\n  <ellipse cx="10" cy="5" rx="4" ry="4" fill="currentColor"/>\n  <!-- kurta body -->\n  <path d="M6 9 Q10 8 14 9 L15 20 Q10 22 5 20 Z" fill="currentColor"/>\n  <!-- kurta skirt (longer for child kurta) -->\n  <path d="M5 20 L5 28 Q10 30 15 28 L15 20 Q10 22 5 20Z" fill="currentColor"/>\n  <!-- arms -->\n  <path d="M6 10 L3 18 M14 10 L17 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>\n  <!-- legs/pyjama -->\n  <path d="M7 28 L6 33 M13 28 L14 33" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>\n</svg>',lbl:"Anaemia prevalence in children · "+rl,
      sub:NATIONAL.anaemiaC[r]?fmtIN(1400e6*0.103*NATIONAL.anaemiaC[r]/100)+" children":null,
      color:"#f59e0b", src:"nfhs", demo:"children"},
-    {val:NATIONAL.anaemiaM[r],lbl:"men anaemic · "+rl,
+    {val:NATIONAL.anaemiaM[r],icon:'<svg viewBox="0 0 24 42" width="22" height="36" style="display:inline-block;vertical-align:middle;">\n  <!-- head -->\n  <ellipse cx="12" cy="5" rx="4" ry="4.5" fill="currentColor"/>\n  <!-- kurta body -->\n  <path d="M7 9 Q12 8 17 9 L18 22 Q12 24 6 22 Z" fill="currentColor"/>\n  <!-- kurta lower (longer) -->\n  <path d="M6 22 L6 32 Q12 34 18 32 L18 22 Q12 24 6 22Z" fill="currentColor"/>\n  <!-- kurta side slits -->\n  <path d="M6 28 L5 34 M18 28 L19 34" stroke="currentColor" stroke-width="1" opacity="0.4" fill="none"/>\n  <!-- arms -->\n  <path d="M7 10 L3 20 M17 10 L21 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>\n  <!-- pyjama legs -->\n  <path d="M8 32 L7 40 M16 32 L17 40" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>\n</svg>',lbl:"Anaemia prevalence in men · "+rl,
      sub:NATIONAL.anaemiaM[r]?fmtIN(1400e6*0.26*NATIONAL.anaemiaM[r]/100)+" men":null,
      color:"#3b82f6", src:"nfhs", demo:"men"},
-    {val:NATIONAL.ironDef[r],lbl:"iron deficient · CNNS 2016–18",
+    {val:NATIONAL.ironDef[r],icon:'<svg viewBox="0 0 24 24" width="24" height="24" style="display:inline-block;vertical-align:middle;">\n  <path d="M9 3 L9 14 L4 20 Q3 22 5 22 L19 22 Q21 22 20 20 L15 14 L15 3 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>\n  <path d="M7 14 L17 14" stroke="currentColor" stroke-width="1.5"/>\n  <path d="M9 3 L15 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>\n  <circle cx="14" cy="18" r="1.5" fill="currentColor" opacity="0.7"/>\n  <circle cx="10" cy="19" r="1" fill="currentColor" opacity="0.5"/>\n</svg>',lbl:"Iron deficiency · CNNS 2016–18",
      sub:"children & adolescents",
      color:"#7c3aed", src:"cnns", demo:null},
   ];
-  return `<div class="headline-bar">
-    ${items.map(it=>{
+  return '<div class="headline-bar">'
+    +items.map(it=>{
       const active=(S.source===it.src&&(it.demo===null||S.demo===it.demo));
-      return `<div class="hs-item${active?" active":""}" style="${active?"box-shadow:inset 0 -3px 0 "+it.color:""}"
-        onclick="setSource('${it.src}'${it.demo?(",'"+it.demo+"'"):""})">
-        <div class="hs-num" style="color:${it.color};">${it.val!==null?it.val.toFixed(0)+"%":"—"}</div>
-        <div class="hs-lbl">${it.lbl}</div>
-        ${it.sub?`<div class="hs-sub" style="color:${it.color};">≈ ${it.sub}</div>`:""}
-      </div>`;
-    }).join("")}
-  </div>`;
+      return '<div class="hs-item'+(active?" active":"")+'" style="'+(active?"box-shadow:inset 0 -3px 0 "+it.color:"")+'"'
+        +' onclick="setSource(&apos;'+it.src+'&apos;'+(it.demo?(',&apos;'+it.demo+'&apos;'):'')+')">&nbsp;'
+        +'<div style="margin-bottom:6px;color:'+it.color+';">'+it.icon+'</div>'
+        +'<div class="hs-num" style="color:'+it.color+';">'+(it.val!==null?it.val.toFixed(0)+"%":"—")+'</div>'
+        +'<div class="hs-lbl" style="color:#333;font-weight:600;">'+it.lbl+'</div>'
+        +(it.sub?'<div class="hs-sub" style="color:'+it.color+';">≈ '+it.sub+'</div>':"")
+        +'</div>';
+    }).join("")
+    +'</div>';
 }
 
 // ── Tab 1 render ──────────────────────────────────────────────────────────────
@@ -850,13 +851,13 @@ function renderTab1(){
 
   document.getElementById("content").innerHTML=`
   <div style="background:#fff;border-left:3px solid #dc6059;border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.05);">
-    <div style="font-size:14px;font-weight:700;color:#0a3d62;margin-bottom:3px;">India faces one of the highest burdens of anaemia in the world.</div>
-    <div style="font-size:12px;color:#888;line-height:1.6;">Explore the scale of the problem by state, demographic, and survey round. Use the toggles below to switch between indicators and time periods.</div>
+    <div style="font-size:16px;font-weight:700;color:#0a3d62;margin-bottom:4px;">India faces one of the highest burdens of anaemia in the world.</div>
+    <div style="font-size:13px;color:#444;line-height:1.6;">Explore the scale of the problem by state, demographic, and survey round. Use the toggles below to switch between indicators and time periods.</div>
   </div>
   ${renderHeadline()}
   <!-- What do you want to map? -->
   <div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:14px 16px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.04);">
-    <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#aaa;margin-bottom:10px;">What do you want to map?</div>
+    <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#666;margin-bottom:10px;">What do you want to map?</div>
     <div style="display:flex;gap:6px;flex-wrap:wrap;">
       ${[
         ["nfhs","women",   "#dc6059","Anaemia prevalence in women"],
@@ -957,7 +958,7 @@ function renderCompare(){
 
   document.getElementById("content").innerHTML=`
   <div style="max-width:660px;padding:4px 0;">
-    <p style="font-size:13px;color:#888;margin-bottom:20px;line-height:1.6;">Adjust the baseline to match your state's anaemia rate, then click to see the projected impact of fortified atta. Evidence: iron-fortified wheat flour reduces anaemia among those affected by ~27% (Field et al., Cochrane 2021).</p>
+    <p style="font-size:13px;color:#555;margin-bottom:20px;line-height:1.6;">Adjust the baseline to match your state's anaemia rate, then click to see the projected impact of fortified atta. Evidence: iron-fortified wheat flour reduces anaemia among those affected by ~27% (Field et al., Cochrane 2021).</p>
 
     <!-- WOMEN -->
     <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#dc6059;margin-bottom:12px;text-transform:uppercase;">Women 15–49</div>
@@ -965,15 +966,15 @@ function renderCompare(){
 
       <!-- Left: baseline — NEVER changes after supply -->
       <div style="text-align:center;">
-        <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#aaa;margin-bottom:6px;">WITHOUT FORTIFICATION</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#666;margin-bottom:6px;">WITHOUT FORTIFICATION</div>
         <div id="w-left-num" style="font-size:50px;font-weight:700;color:#dc6059;line-height:1;">${wBase}</div>
-        <div style="font-size:12px;color:#aaa;margin-bottom:10px;">per 100 women anaemic</div>
+        <div style="font-size:12px;color:#666;margin-bottom:10px;">per 100 women anaemic</div>
         <div id="w-left-grid">${personSVGs(wBase,"#dc6059")}</div>
       </div>
 
       <!-- Middle: slider + button -->
       <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:2rem;">
-        <div id="w-base-lbl" style="font-size:11px;color:#aaa;font-weight:700;">${wBase}%</div>
+        <div id="w-base-lbl" style="font-size:11px;color:#666;font-weight:700;">${wBase}%</div>
         <input type="range" min="30" max="80" value="${wBase}" step="1"
           style="writing-mode:vertical-lr;direction:rtl;height:80px;"
           oninput="updateWBase(+this.value);">
@@ -983,9 +984,9 @@ function renderCompare(){
 
       <!-- Right: projected — revealed on click -->
       <div style="text-align:center;">
-        <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#aaa;margin-bottom:6px;">WITH FORTIFICATION</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#666;margin-bottom:6px;">WITH FORTIFICATION</div>
         <div id="w-right-num" style="font-size:50px;font-weight:700;color:#ddd;line-height:1;">?</div>
-        <div style="font-size:12px;color:#aaa;margin-bottom:10px;">per 100 women anaemic</div>
+        <div style="font-size:12px;color:#666;margin-bottom:10px;">per 100 women anaemic</div>
         <div id="w-right-grid">${personSVGs(0,"#0097a7")}</div>
       </div>
     </div>
@@ -997,15 +998,15 @@ function renderCompare(){
 
         <!-- Left -->
         <div style="text-align:center;">
-          <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#aaa;margin-bottom:6px;">WITHOUT FORTIFICATION</div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#666;margin-bottom:6px;">WITHOUT FORTIFICATION</div>
           <div id="c-left-num" style="font-size:46px;font-weight:700;color:#f59e0b;line-height:1;">${cBase}</div>
-          <div style="font-size:12px;color:#aaa;margin-bottom:10px;">per 100 children anaemic</div>
+          <div style="font-size:12px;color:#666;margin-bottom:10px;">per 100 children anaemic</div>
           <div id="c-left-grid">${personSVGs(cBase,"#f59e0b")}</div>
         </div>
 
         <!-- Middle -->
         <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:1.8rem;">
-          <div id="c-base-lbl" style="font-size:11px;color:#aaa;font-weight:700;">${cBase}%</div>
+          <div id="c-base-lbl" style="font-size:11px;color:#666;font-weight:700;">${cBase}%</div>
           <input type="range" min="20" max="90" value="${cBase}" step="1"
             style="writing-mode:vertical-lr;direction:rtl;height:80px;"
             oninput="updateCBase(+this.value);">
@@ -1015,9 +1016,9 @@ function renderCompare(){
 
         <!-- Right -->
         <div style="text-align:center;">
-          <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#aaa;margin-bottom:6px;">WITH FORTIFICATION</div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#666;margin-bottom:6px;">WITH FORTIFICATION</div>
           <div id="c-right-num" style="font-size:46px;font-weight:700;color:#ddd;line-height:1;">?</div>
-          <div style="font-size:12px;color:#aaa;margin-bottom:10px;">per 100 children anaemic</div>
+          <div style="font-size:12px;color:#666;margin-bottom:10px;">per 100 children anaemic</div>
           <div id="c-right-grid">${personSVGs(0,"#0097a7")}</div>
         </div>
       </div>
@@ -1162,7 +1163,7 @@ function renderScenario(){
 
   document.getElementById("content").innerHTML = `
   <div style="max-width:720px;padding:4px 0;">
-    <p style="font-size:13px;color:#888;margin-bottom:18px;line-height:1.6;">
+    <p style="font-size:13px;color:#555;margin-bottom:18px;line-height:1.6;">
       Select a state and demographic to see today's burden and the projected impact of fortified atta.
     </p>
 
@@ -1184,7 +1185,7 @@ function renderScenario(){
 
     <!-- NFHS trend: inline SVG line graph -->
     <div style="margin-bottom:18px;">
-      <div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin-bottom:10px;">
+      <div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#666;margin-bottom:10px;">
         Anaemia prevalence trend · ${sel.name}
       </div>
       <div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:16px 20px;box-shadow:0 1px 4px rgba(0,0,0,.05);">
@@ -1280,13 +1281,13 @@ function renderScenario(){
     </div>
 
     <!-- People grid: side by side, left fixed, right revealed on click -->
-    <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:start;margin-bottom:20px;">
+    <div style="display:grid;grid-template-columns:1fr auto 1fr 160px;gap:16px;align-items:start;margin-bottom:20px;">
 
       <!-- Left: today, fixed -->
       <div style="text-align:center;">
-        <div style="font-size:10px;font-weight:700;letter-spacing:.06em;color:#aaa;text-transform:uppercase;margin-bottom:6px;">Today · NFHS-5</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.06em;color:#666;text-transform:uppercase;margin-bottom:6px;">Today · NFHS-5</div>
         <div style="font-size:44px;font-weight:700;line-height:1;margin-bottom:4px;color:${m.c};">${bP!==null?bP.toFixed(1)+"%":"n/a"}</div>
-        <div style="font-size:11px;color:#aaa;margin-bottom:10px;">${bN!==null?"≈ "+fmtIN(bN)+" people":""}</div>
+        <div style="font-size:11px;color:#666;margin-bottom:10px;">${bN!==null?"≈ "+fmtIN(bN)+" people":""}</div>
         <div id="sc-left-grid" class="person-grid">${bP!==null?(()=>{const pw=m.sz==="small"?13:17,ph=m.sz==="small"?20:26;let g="";for(let i=0;i<100;i++){const fill=i<Math.round(bP)?m.c:"#e0dad0";g+=`<svg viewBox="0 0 20 30" style="width:${pw}px;height:${ph}px;display:block;"><circle cx="10" cy="6" r="4" fill="${fill}"/><rect x="5" y="12" width="10" height="16" rx="2" fill="${fill}"/></svg>`;}return g;})():""}</div>
       </div>
 
@@ -1301,13 +1302,17 @@ function renderScenario(){
         </div>
       </div>
 
+      <!-- Mini state map -->
+      <div id="sc-mini-map" style="width:160px;flex-shrink:0;padding-top:0.5rem;opacity:0.9;">
+      </div>
+
       <!-- Right: projected, revealed on click -->
       <div style="text-align:center;opacity:${sSup?1:0.3};transition:opacity .3s;" id="sc-right-col">
-        <div style="font-size:10px;font-weight:700;letter-spacing:.06em;color:#aaa;text-transform:uppercase;margin-bottom:6px;">With fortified atta</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.06em;color:#666;text-transform:uppercase;margin-bottom:6px;">With fortified atta</div>
         <div style="font-size:44px;font-weight:700;line-height:1;margin-bottom:4px;color:${sSup?"#0097a7":"#ddd"};" id="sc-right-num">
           ${sSup&&pP!==null?pP+"%":"?"}
         </div>
-        <div style="font-size:11px;color:#aaa;margin-bottom:10px;" id="sc-right-sub">
+        <div style="font-size:11px;color:#666;margin-bottom:10px;" id="sc-right-sub">
           ${sSup&&pN!==null?"≈ "+fmtIN(pN)+" people":""}
         </div>
         <div id="sc-right-grid" class="person-grid">${(()=>{const pw=m.sz==="small"?13:17,ph=m.sz==="small"?20:26;let g="";for(let i=0;i<100;i++){const fill=(sSup&&pP&&i<Math.round(sSup?pP:0))?"#0097a7":"#e0dad0";g+=`<svg viewBox="0 0 20 30" style="width:${pw}px;height:${ph}px;display:block;"><circle cx="10" cy="6" r="4" fill="${fill}"/><rect x="5" y="12" width="10" height="16" rx="2" fill="${fill}"/></svg>`;}return g;})()}</div>
@@ -1322,22 +1327,38 @@ function renderScenario(){
     </div>
 
     <!-- Evidence footnote -->
-    <div style="background:#f9f7f2;border-radius:10px;border:1px solid #e4e0d8;padding:14px 16px;">
-      <div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin-bottom:7px;">About this projection</div>
-      <div style="font-size:12px;color:#555;line-height:1.7;">
-        The projected figure is based on evidence that iron-fortified wheat flour can reduce anaemia
-        among those affected by around 27%. So in a state where 60 in every 100 people are anaemic,
-        roughly 16 of those 60 could be lifted out of anaemia — bringing prevalence down to around
-        44 in 100. Actual impact will vary by state depending on wheat consumption levels and
-        baseline anaemia rates.
+    <div style="background:#f9f7f2;border-radius:12px;border:1px solid #e4e0d8;padding:18px 20px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#444;margin-bottom:10px;">About this projection</div>
+      <div style="font-size:14px;color:#222;line-height:1.8;margin-bottom:14px;">
+        Studies show that people who regularly eat iron-fortified wheat flour are about
+        <strong>27% less likely to become anaemic</strong> than those eating unfortified flour.
+        That means: if 60 out of 100 people in a state are anaemic today, around
+        <strong>16 of those 60 people</strong> could be lifted out of anaemia &mdash;
+        bringing the figure down to roughly 44 out of 100.
+        The actual impact will depend on how much wheat flour people eat and how widespread anaemia already is.
       </div>
-      <div style="margin-top:8px;font-size:11px;color:#aaa;">
-        Source: Field MS, Mithra P, Peña-Rosas JP. <em>Wheat flour fortification with iron and other
-        micronutrients for reducing anaemia and improving iron status in populations.</em>
-        Cochrane Database of Systematic Reviews 2021, Issue 1. Art. No.: CD011302.
+      <div style="border-top:1px solid #e4e0d8;margin-bottom:12px;"></div>
+      <div style="font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#444;margin-bottom:5px;">For the technically minded</div>
+      <div style="font-size:12px;color:#333;line-height:1.7;">
+        The 27% figure is a <em>relative risk reduction</em> (RR&nbsp;0.73, 95%&nbsp;CI&nbsp;0.55&ndash;0.97)
+        from a Cochrane systematic review of 5 randomised trials (n=2,315). It applies to the proportion
+        of people already anaemic &mdash; not the whole population &mdash; which is why a 27% reduction in
+        risk produces a smaller percentage-point drop in overall prevalence.
+      </div>
+      <div style="margin-top:8px;font-size:11px;color:#444;">
+        <strong>Source:</strong> Field MS, Mithra P, Pe&ntilde;a-Rosas JP.
+        <em>Wheat flour fortification with iron and other micronutrients for reducing anaemia
+        and improving iron status in populations.</em>
+        Cochrane Database of Systematic Reviews 2021, Issue 1.
+        <a href="https://doi.org/10.1002/14651858.CD011302.pub3" target="_blank"
+          style="color:#0097a7;text-decoration:none;font-weight:700;">&nearr; View paper</a>
       </div>
     </div>
   </div>`;
+  setTimeout(()=>{
+    const im={anaemiaW:{c:'#dc6059'},anaemiaC:{c:'#f59e0b'},anaemiaM:{c:'#3b82f6'}};
+    renderMiniMap(S.sState,(im[S.sInd]||{c:'#0a3d62'}).c);
+  },50);
 }
 function set(k,v){
   if(k==="ind"&&v==="anaemiaM"&&S.round===0) S.round=2;
@@ -1403,6 +1424,7 @@ function toggleSupply(){
   }
   const impactBox=document.getElementById('impact-box');
   if(impactBox) impactBox.style.display=S.sSup&&lifted?'block':'none';
+  renderMiniMap(S.sState, m.c);
 }
 
 // ── REACH DATA ────────────────────────────────────────────────────────────────
@@ -1415,8 +1437,8 @@ let RS={scheme:"all",sort:"pds",pinnedState:null,grainFilter:null};
 function fmtCr(n){
   if(n===0) return "—";
   const full=Math.round(n).toLocaleString("en-IN");
-  if(n>=10000000) return full+' <span style="font-size:10px;color:#aaa;font-weight:400;">('+( n/10000000).toFixed(1)+' Cr)</span>';
-  if(n>=100000)   return full+' <span style="font-size:10px;color:#aaa;font-weight:400;">('+( n/100000).toFixed(1)+' L)</span>';
+  if(n>=10000000) return full+' <span style="font-size:10px;color:#666;font-weight:400;">('+( n/10000000).toFixed(1)+' Cr)</span>';
+  if(n>=100000)   return full+' <span style="font-size:10px;color:#666;font-weight:400;">('+( n/100000).toFixed(1)+' L)</span>';
   return full;
 }
 
@@ -1453,7 +1475,7 @@ function buildReachStateCard(s){
       +'<div class="rsc-row"><span style="color:#555;">Total beneficiaries</span><span class="rsc-val">'+fmtCr(total)+'</span></div>'
       +'<div class="rsc-row"><span style="color:'+sc.color+';font-weight:700;">Wheat beneficiaries</span><span class="rsc-val" style="color:'+sc.color+';">'+(wheat>0?fmtCr(wheat):"—")+'</span></div>'
       +'<div class="rsc-bar-wrap"><div class="rsc-bar-fill" style="width:'+pct+'%;background:'+sc.color+';"></div></div>'
-      +'<div style="font-size:10px;color:#aaa;text-align:right;">'+(wheat>0?pct+'% of scheme beneficiaries':'No wheat distributed')+'</div>'
+      +'<div style="font-size:10px;color:#666;text-align:right;">'+(wheat>0?pct+'% of scheme beneficiaries':'No wheat distributed')+'</div>'
       +'</div>';
   }).join('<div style="border-top:1px solid #f0ede6;"></div>');
   const totalWheat=s.pds.wheat+s.icds.wheat+s.mdm.wheat;
@@ -1463,7 +1485,7 @@ function buildReachStateCard(s){
     +'<div style="background:#f4f1eb;border-radius:8px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center;">'
     +'<span style="font-size:11px;color:#666;font-weight:700;">Total wheat beneficiaries</span>'
     +'<span style="font-size:18px;font-weight:700;color:#0a3d62;">'+fmtCr(totalWheat)+'</span></div>'
-    +'<div style="font-size:10px;color:#888;font-style:italic;">All 3 schemes combined</div>'
+    +'<div style="font-size:10px;color:#555;font-style:italic;">All 3 schemes combined</div>'
     +rows+'</div></div>';
 }
 
@@ -1493,17 +1515,17 @@ function renderReach(){
     const grainRows=[["wheat","Full atta fortification potential"],["both","Verify wheat/rice split before scaling"],["rice","Fortified rice is the relevant vehicle"]]
       .map(([g,desc])=>'<div style="display:flex;gap:8px;margin-bottom:7px;align-items:flex-start;">'+grainBadge(g)+'<span style="font-size:11px;color:#666;">'+desc+'</span></div>').join("");
     const schemeRows=[["#0a3d62","PDS","Public Distribution System","NFSA ration cardholders; 5 kg/person/month"],["#0097a7","ICDS","Integrated Child Dev. Services","Children 6–72mo & pregnant/lactating women"],["#f59e0b","PM-POSHAN","Mid-Day Meal","Primary & upper-primary school children"]]
-      .map(([c,k,name,desc])=>'<div style="display:flex;gap:8px;margin-bottom:8px;align-items:flex-start;"><div style="width:10px;height:10px;background:'+c+';border-radius:2px;flex-shrink:0;margin-top:2px;"></div><div><div style="font-size:11px;font-weight:700;color:#333;">'+name+' <span style="color:#aaa;font-weight:400;">'+k+'</span></div><div style="font-size:10px;color:#aaa;">'+desc+'</div></div></div>').join("");
+      .map(([c,k,name,desc])=>'<div style="display:flex;gap:8px;margin-bottom:8px;align-items:flex-start;"><div style="width:10px;height:10px;background:'+c+';border-radius:2px;flex-shrink:0;margin-top:2px;"></div><div><div style="font-size:11px;font-weight:700;color:#333;">'+name+' <span style="color:#666;font-weight:400;">'+k+'</span></div><div style="font-size:10px;color:#666;">'+desc+'</div></div></div>').join("");
     return '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;">'
-      +'<div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:13px 14px;"><div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin-bottom:10px;">Staple grain type</div>'+grainRows+'</div>'
-      +'<div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:13px 14px;"><div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin-bottom:10px;">Schemes</div>'+schemeRows+'</div>'
+      +'<div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:13px 14px;"><div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#666;margin-bottom:10px;">Staple grain type</div>'+grainRows+'</div>'
+      +'<div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:13px 14px;"><div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#666;margin-bottom:10px;">Schemes</div>'+schemeRows+'</div>'
       +'</div>';
   })();
 
   document.getElementById("content").innerHTML=
   '<div style="background:#fff;border-left:3px solid #0097a7;border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.05);">'
-  +'<div style="font-size:14px;font-weight:700;color:#0a3d62;margin-bottom:3px;">Three government schemes already reach hundreds of millions of people with subsidised food.</div>'
-  +'<div style="font-size:12px;color:#888;line-height:1.6;">PDS, ICDS and PM-POSHAN are the delivery infrastructure through which fortified wheat flour can reach those who need it most.</div>'
+  +'<div style="font-size:16px;font-weight:700;color:#0a3d62;margin-bottom:4px;">Three government schemes already reach hundreds of millions of people with subsidised food.</div>'
+  +'<div style="font-size:13px;color:#444;line-height:1.6;">PDS, ICDS and PM-POSHAN are the delivery infrastructure through which fortified wheat flour can reach those who need it most.</div>'
   +'</div>'
   +'<div class="summary-cards">'+cards+'</div>'
   +'<div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end;margin-bottom:14px;">'
@@ -1517,12 +1539,12 @@ function renderReach(){
   +'<div style="display:grid;grid-template-columns:1fr 280px;gap:20px;align-items:start;">'
   +'<div>'
   +SVG_STR
-  +'<div style="display:flex;align-items:center;gap:10px;margin-top:8px;"><span style="font-size:11px;color:#aaa;">Fewer wheat beneficiaries</span><div style="flex:1;height:10px;border-radius:5px;background:linear-gradient(to right,rgb(251,251,251),'+col+');"></div><span style="font-size:11px;color:#aaa;">More</span></div>'
-  +'<div style="margin-top:5px;font-size:10px;color:#bbb;">Colour scale is logarithmic. Grey = no wheat in this scheme. Map © simplemaps.com.</div>'
+  +'<div style="display:flex;align-items:center;gap:10px;margin-top:8px;"><span style="font-size:11px;color:#666;">Fewer wheat beneficiaries</span><div style="flex:1;height:10px;border-radius:5px;background:linear-gradient(to right,rgb(251,251,251),'+col+');"></div><span style="font-size:11px;color:#666;">More</span></div>'
+  +'<div style="margin-top:5px;font-size:10px;color:#777;">Colour scale is logarithmic. Grey = no wheat in this scheme. Map © simplemaps.com.</div>'
   +'</div>'
   +'<div style="display:flex;flex-direction:column;gap:12px;">'
   +'<div id="reach-state-panel"><div class="panel-placeholder">Hover over a state<br>to preview · click to pin</div></div>'
-  +'<div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:12px 14px;font-size:10px;color:#bbb;line-height:1.5;">Sources: PDS — NFSA Foodgrains Bulletin Mar 2026 · ICDS — MoWCD Annual Report 2024–25 · PM-POSHAN — Quarterly grain allocation data.</div>'
+  +'<div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:12px 14px;font-size:10px;color:#777;line-height:1.5;">Sources: PDS — NFSA Foodgrains Bulletin Mar 2026 · ICDS — MoWCD Annual Report 2024–25 · PM-POSHAN — Quarterly grain allocation data.</div>'
   +'</div></div>';
 
   // Colour map
@@ -1543,11 +1565,11 @@ function renderReach(){
       if(!rs) return;
       tip.innerHTML='<div style="font-weight:700;font-size:14px;color:#0a3d62;margin-bottom:7px;">'+rs.name+'</div>'
         +'<div style="font-size:11px;margin-bottom:8px;">'+grainBadge(rs.grain)+'</div>'
-        +'<div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">Wheat beneficiaries</div>'
+        +'<div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#666;margin-bottom:5px;">Wheat beneficiaries</div>'
         +[["#0a3d62","PDS",rs.pds.wheat],["#0097a7","ICDS",rs.icds.wheat],["#f59e0b","PM-POSHAN",rs.mdm.wheat]]
           .map(([c,l,w])=>'<div style="display:flex;justify-content:space-between;gap:10px;margin-bottom:3px;"><span style="color:'+c+';font-weight:700;font-size:12px;">'+l+'</span><span style="font-weight:700;font-size:12px;">'+(w>0?Math.round(w).toLocaleString("en-IN"):"—")+'</span></div>').join("")
         +'<div style="border-top:1px solid #f0ede6;margin-top:6px;padding-top:6px;font-weight:700;color:#1b6b3a;">Total: '+Math.round(rs.pds.wheat+rs.icds.wheat+rs.mdm.wheat).toLocaleString("en-IN")+'</div>'
-        +'<div style="font-size:10px;color:#ccc;margin-top:5px;">click to pin</div>';
+        +'<div style="font-size:10px;color:#888;margin-top:5px;">click to pin</div>';
       tip.style.display="block"; tip.style.left=(e.clientX+14)+"px"; tip.style.top=(e.clientY-12)+"px";
       if(!RS.pinnedState){
         document.querySelectorAll(".sp").forEach(x=>{const xid=x.id.replace('-inset','');x.style.opacity=xid===baseId?"1":(RS.grainFilter&&REACH_STATES.find(s=>s.id===xid)?.grain!==RS.grainFilter?"0.2":"0.45");});
@@ -1601,8 +1623,8 @@ function renderImpact(){
 
   // Render framing
   const framing = '<div style="background:#fff;border-left:3px solid #0097a7;border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.05);">'
-    +'<div style="font-size:14px;font-weight:700;color:#0a3d62;margin-bottom:3px;">Iron-fortified wheat flour can meaningfully reduce anaemia among those who consume it regularly.</div>'
-    +'<div style="font-size:12px;color:#888;line-height:1.6;">Evidence from a Cochrane systematic review (2021) shows a 27% reduction in anaemia risk. Explore what this means per 100 people or for a specific state.</div>'
+    +'<div style="font-size:16px;font-weight:700;color:#0a3d62;margin-bottom:4px;">Iron-fortified wheat flour can meaningfully reduce anaemia among those who consume it regularly.</div>'
+    +'<div style="font-size:13px;color:#444;line-height:1.6;">Evidence from a Cochrane systematic review (2021) shows a 27% reduction in anaemia risk. Explore what this means per 100 people or for a specific state.</div>'
     +'</div>';
 
   if(sub==="compare"){
@@ -1646,7 +1668,14 @@ const STATE_PROGRAMMES = [
    scheme:"PDS", vehicle:"Fortified wheat flour",
    since:"January 2020", until:null,
    note:"Distributing fortified wheat flour through PDS since January 2020.",
-   citation:"Wakhloo, 2025"},
+   citation:"Wakhloo, 2025",
+   url:"https://doi.org/10.1111/mcn.12669",
+   url:"https://doi.org/10.1111/mcn.12669",
+   url:"https://apjcn.qdu.edu.cn/23_5_3.pdf",
+   url:"https://nutritionconnect.org/sites/default/files/uploads/resources/2019-04/Large%20Scale%20Food%20Fortification%20in%20India.%20The%20Journey%20So%20Far%20and%20the%20Road%20Ahead..pdf",
+   url:"https://ffinetwork.org/wp-content/uploads/2025/05/FFI_2018_Annual_Report-1-1.pdf",
+   url:"https://ladakh.gov.in/ladakh-administration-to-provide-fortified-wheat-fortified-salt-oil-and-milk-to-be-promoted-principal-secretary-kotwal/",
+   url:"https://southasia.ifpri.info/files/2025/12/3.-Mihika-Wakhloo_UPDATED.pdf"},
   {id:"INLA", name:"Ladakh", status:"active",
    scheme:"PDS", vehicle:"Fortified wheat flour",
    since:"December 2023", until:null,
@@ -1722,8 +1751,8 @@ function renderOurWork(){
   const sub = S.ourWorkSub || "state";
 
   const framing = '<div style="background:#fff;border-left:3px solid #1b6b3a;border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.05);">'
-    +'<div style="font-size:14px;font-weight:700;color:#0a3d62;margin-bottom:3px;">Fortified wheat flour is already being distributed through government programmes across India.</div>'
-    +'<div style="font-size:12px;color:#888;line-height:1.6;">Several states have fortified or are currently fortifying wheat flour through PDS and other schemes. Fortify Health\'s own partnerships build on this foundation.</div>'
+    +'<div style="font-size:16px;font-weight:700;color:#0a3d62;margin-bottom:4px;">Fortified wheat flour is already being distributed through government programmes across India.</div>'
+    +'<div style="font-size:13px;color:#444;line-height:1.6;">Several states have fortified or are currently fortifying wheat flour through PDS and other schemes. Fortify Health\'s own partnerships build on this foundation.</div>'
     +'</div>';
 
   const subNav = '<div style="display:flex;gap:3px;margin-bottom:16px;">'
@@ -1746,7 +1775,7 @@ function renderStateProgrammes(){
   // Summary
   const summary = '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;">'
     +'<div class="sum-card"><div class="sum-card-num" style="color:#1b6b3a;">'+active.length+'</div><div class="sum-card-lbl">states currently fortifying</div><div class="sum-card-sub" style="color:#1b6b3a;">wheat flour through PDS</div></div>'
-    +'<div class="sum-card"><div class="sum-card-num" style="color:#888;">'+stopped.length+'</div><div class="sum-card-lbl">states previously fortified</div><div class="sum-card-sub" style="color:#888;">programmes since ended</div></div>'
+    +'<div class="sum-card"><div class="sum-card-num" style="color:#555;">'+stopped.length+'</div><div class="sum-card-lbl">states previously fortified</div><div class="sum-card-sub" style="color:#555;">programmes since ended</div></div>'
     +'<div class="sum-card"><div class="sum-card-num" style="color:#0a3d62;">'+(active.length+stopped.length)+'</div><div class="sum-card-lbl">total states with experience</div><div class="sum-card-sub" style="color:#0a3d62;">of wheat flour fortification</div></div>'
     +'</div>';
 
@@ -1755,9 +1784,9 @@ function renderStateProgrammes(){
     +'<div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;">'
     +'<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#555;"><div style="width:10px;height:10px;border-radius:2px;background:#1b6b3a;"></div>Currently fortifying</div>'
     +'<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#555;"><div style="width:10px;height:10px;border-radius:2px;background:#bbb;"></div>Previously fortified</div>'
-    +'<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;"><div style="width:10px;height:10px;border-radius:2px;background:#e8e3da;"></div>No programme</div>'
+    +'<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#666;"><div style="width:10px;height:10px;border-radius:2px;background:#e8e3da;"></div>No programme</div>'
     +'</div>'
-    +'<div style="font-size:10px;color:#ccc;margin-top:4px;">Click a highlighted state to see programme details.</div>'
+    +'<div style="font-size:10px;color:#888;margin-top:4px;">Click a highlighted state to see programme details.</div>'
     +'</div>';
 
   // Sidebar: programme list
@@ -1767,14 +1796,14 @@ function renderStateProgrammes(){
       +'<div style="display:flex;justify-content:space-between;align-items:center;">'
       +'<div style="font-size:12px;font-weight:700;color:#0a3d62;">'+p.name+'</div>'
       +spBadge(p.status)+'</div>'
-      +'<div style="font-size:10px;color:#888;margin-top:2px;">'+p.scheme+' · since '+p.since+'</div>'
+      +'<div style="font-size:10px;color:#555;margin-top:2px;">'+p.scheme+' · since '+p.since+'</div>'
       +'</div>').join("")
-    +'<div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#888;margin:10px 0 8px;">Previously fortified</div>'
+    +'<div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#555;margin:10px 0 8px;">Previously fortified</div>'
     +stopped.map(p=>'<div onclick="showSPPanel(\''+p.id+'\')" style="padding:7px 8px;border-radius:8px;cursor:pointer;margin-bottom:3px;border:1px solid #f0ede6;" onmouseover="this.style.background=\'#f9f7f2\'" onmouseout="this.style.background=\'#fff\'">'
       +'<div style="display:flex;justify-content:space-between;align-items:center;">'
       +'<div style="font-size:12px;font-weight:700;color:#555;">'+p.name+'</div>'
       +spBadge(p.status)+'</div>'
-      +'<div style="font-size:10px;color:#888;margin-top:2px;">'+p.scheme+' · '+p.since+'–'+(p.until||'present')+'</div>'
+      +'<div style="font-size:10px;color:#555;margin-top:2px;">'+p.scheme+' · '+p.since+'–'+(p.until||'present')+'</div>'
       +'</div>').join("")
     +'</div>';
 
@@ -1800,16 +1829,16 @@ function renderFHProgrammes(){
     +SVG_STR
     +'<div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;">'
     +Object.entries(FH_STATUS).map(([k,v])=>'<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#555;"><div style="width:10px;height:10px;border-radius:2px;background:'+v.color+';"></div>'+v.label+'</div>').join("")
-    +'<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;"><div style="width:10px;height:10px;border-radius:2px;background:#e8e3da;"></div>No FH programme</div>'
+    +'<div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#666;"><div style="width:10px;height:10px;border-radius:2px;background:#e8e3da;"></div>No FH programme</div>'
     +'</div>'
-    +'<div style="font-size:10px;color:#ccc;margin-top:4px;">Government programmes only. Click a state to see details.</div>'
+    +'<div style="font-size:10px;color:#888;margin-top:4px;">Government programmes only. Click a state to see details.</div>'
     +'</div>';
 
   const progList = '<div style="background:#fff;border-radius:12px;border:1px solid #e4e0d8;padding:13px 14px;box-shadow:0 1px 4px rgba(0,0,0,.04);">'
-    +'<div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin-bottom:10px;">Government partnerships</div>'
+    +'<div style="font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#666;margin-bottom:10px;">Government partnerships</div>'
     +FH_PROJECTS.map(p=>'<div onclick="showOWPanel(\''+p.id+'\')" style="padding:7px 8px;border-radius:8px;cursor:pointer;margin-bottom:3px;border:1px solid #f0ede6;" onmouseover="this.style.background=\'#f9f7f2\'" onmouseout="this.style.background=\'#fff\'">'
       +'<div style="display:flex;justify-content:space-between;align-items:center;">'
-      +'<div><div style="font-size:12px;font-weight:700;color:#0a3d62;">'+p.name+'</div><div style="font-size:10px;color:#888;">'+p.program+'</div></div>'
+      +'<div><div style="font-size:12px;font-weight:700;color:#0a3d62;">'+p.name+'</div><div style="font-size:10px;color:#555;">'+p.program+'</div></div>'
       +statusBadge(p.status)+'</div></div>').join("")
     +'</div>';
 
@@ -1837,8 +1866,8 @@ function attachStateProgrammesMap(){
       tip.innerHTML='<div style="font-weight:700;font-size:13px;color:#0a3d62;margin-bottom:6px;">'+prog.name+'</div>'
         +spBadge(prog.status)
         +'<div style="font-size:11px;color:#555;margin-top:6px;">'+prog.scheme+'</div>'
-        +'<div style="font-size:11px;color:#888;">'+prog.since+(prog.until?' – '+prog.until:'– present')+'</div>'
-        +'<div style="font-size:10px;color:#ccc;margin-top:5px;">click for details</div>';
+        +'<div style="font-size:11px;color:#555;">'+prog.since+(prog.until?' – '+prog.until:'– present')+'</div>'
+        +'<div style="font-size:10px;color:#888;margin-top:5px;">click for details</div>';
       tip.style.display="block"; tip.style.left=(e.clientX+14)+"px"; tip.style.top=(e.clientY-12)+"px";
     });
     p.addEventListener("mousemove",e=>{ tip.style.left=(e.clientX+14)+"px"; tip.style.top=(e.clientY-12)+"px"; });
@@ -1859,13 +1888,16 @@ function showSPPanel(sid){
     +'</div>'
     +'<div class="sc-body">'
     +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">'+spBadge(p.status)
-    +'<span style="font-size:11px;color:#aaa;">'+p.since+(p.until?' – '+p.until:' – present')+'</span></div>'
+    +'<span style="font-size:11px;color:#666;">'+p.since+(p.until?' – '+p.until:' – present')+'</span></div>'
     +'<div style="background:#f9f7f2;border-radius:8px;padding:10px;margin-bottom:10px;">'
-    +'<div style="font-size:10px;color:#aaa;margin-bottom:3px;">Vehicle</div>'
+    +'<div style="font-size:10px;color:#666;margin-bottom:3px;">Vehicle</div>'
     +'<div style="font-size:14px;font-weight:700;color:#0a3d62;">'+p.vehicle+'</div>'
     +'</div>'
-    +'<div style="font-size:12px;color:#555;line-height:1.6;margin-bottom:8px;">'+p.note+'</div>'
-    +(p.citation?'<div style="font-size:10px;color:#aaa;font-style:italic;">Source: '+p.citation+'</div>':'')
+    +'<div style="font-size:13px;color:#444;line-height:1.6;margin-bottom:8px;">'+p.note+'</div>'
+    +(p.citation?(p.url
+      ?'<a href="'+p.url+'" target="_blank" style="display:inline-flex;align-items:center;gap:4px;margin-top:8px;font-size:11px;color:#0097a7;text-decoration:none;font-weight:700;padding:5px 10px;background:#e0f2fe;border-radius:7px;">📄 '+p.citation+' ↗</a>'
+      :'<div style="font-size:11px;color:#555;font-style:italic;margin-top:6px;">Source: '+p.citation+'</div>')
+    :'')
     +'</div></div>';
 
   // Highlight on map
@@ -1891,7 +1923,7 @@ function attachFHMap(){
       tip.innerHTML='<div style="font-weight:700;font-size:13px;color:#0a3d62;margin-bottom:6px;">'+proj.name+'</div>'
         +'<div style="font-size:11px;color:#555;margin-bottom:3px;">'+proj.partner+'</div>'
         +statusBadge(proj.status)
-        +'<div style="font-size:10px;color:#ccc;margin-top:6px;">click for full details</div>';
+        +'<div style="font-size:10px;color:#888;margin-top:6px;">click for full details</div>';
       tip.style.display="block"; tip.style.left=(e.clientX+14)+"px"; tip.style.top=(e.clientY-12)+"px";
     });
     p.addEventListener("mousemove",e=>{ tip.style.left=(e.clientX+14)+"px"; tip.style.top=(e.clientY-12)+"px"; });
@@ -1914,27 +1946,27 @@ function showOWPanel(sid){
       <div class="sc-body">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
           ${statusBadge(p.status)}
-          <span style="font-size:11px;color:#aaa;">${p.start} → ${p.end}</span>
+          <span style="font-size:11px;color:#666;">${p.start} → ${p.end}</span>
         </div>
         <div style="background:#f9f7f2;border-radius:8px;padding:10px;margin-bottom:10px;">
-          <div style="font-size:11px;color:#aaa;margin-bottom:2px;">Monthly beneficiaries</div>
+          <div style="font-size:11px;color:#666;margin-bottom:2px;">Monthly beneficiaries</div>
           <div style="font-size:24px;font-weight:700;color:${sc.color};">${Math.round(p.bens).toLocaleString("en-IN")}</div>
-          <div style="font-size:10px;color:#aaa;margin-top:1px;">${p.type}</div>
+          <div style="font-size:10px;color:#666;margin-top:1px;">${p.type}</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
           <div class="metric-card">
-            <div style="font-size:10px;color:#aaa;">Fortified atta</div>
+            <div style="font-size:10px;color:#666;">Fortified atta</div>
             <div style="font-size:18px;font-weight:700;color:#0a3d62;">${p.atta} MT</div>
-            <div style="font-size:10px;color:#aaa;">per month</div>
+            <div style="font-size:10px;color:#666;">per month</div>
           </div>
           <div class="metric-card">
-            <div style="font-size:10px;color:#aaa;">Mill partners</div>
+            <div style="font-size:10px;color:#666;">Mill partners</div>
             <div style="font-size:18px;font-weight:700;color:#0a3d62;">${p.mills}</div>
-            <div style="font-size:10px;color:#aaa;">active mills</div>
+            <div style="font-size:10px;color:#666;">active mills</div>
           </div>
         </div>
         <div style="margin-top:8px;padding:8px 10px;background:#f9f7f2;border-radius:8px;">
-          <div style="font-size:10px;color:#aaa;margin-bottom:2px;">Programme type</div>
+          <div style="font-size:10px;color:#666;margin-bottom:2px;">Programme type</div>
           <div style="font-size:12px;font-weight:700;color:#0a3d62;">${p.program}</div>
         </div>
       </div>
@@ -1950,8 +1982,8 @@ function showOWPanel(sid){
 function renderCost(){
   document.getElementById("content").innerHTML=`
   <div style="background:#fff;border-left:3px solid #f59e0b;border-radius:0 10px 10px 0;padding:12px 16px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.05);">
-    <div style="font-size:14px;font-weight:700;color:#0a3d62;margin-bottom:3px;">What would it cost to add fortification to your programme?</div>
-    <div style="font-size:12px;color:#888;line-height:1.6;">The fortified atta budget calculator estimates the additional cost of transitioning from regular to fortified wheat flour, broken down by procurement, milling, packaging, and distribution. Costs vary by state, volume, and supply chain.</div>
+    <div style="font-size:16px;font-weight:700;color:#0a3d62;margin-bottom:4px;">What would it cost to add fortification to your programme?</div>
+    <div style="font-size:13px;color:#444;line-height:1.6;">The fortified atta budget calculator estimates the additional cost of transitioning from regular to fortified wheat flour, broken down by procurement, milling, packaging, and distribution. Costs vary by state, volume, and supply chain.</div>
   </div>
 
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:28px;">
@@ -1959,7 +1991,7 @@ function renderCost(){
       ["₹5.88/kg","Estimated additional cost","to transition to fortified atta (default)"],
       ["₹0.28/kg","Fortification cost","micronutrient premix component only"],
       ["~27%","Reduction in anaemia risk","among regular consumers (Cochrane 2021)"],
-    ].map(([n,l,s])=>'<div class="sum-card"><div class="sum-card-num" style="color:#f59e0b;">'+n+'</div><div class="sum-card-lbl">'+l+'</div><div class="sum-card-sub" style="color:#888;">'+s+'</div></div>').join("")}
+    ].map(([n,l,s])=>'<div class="sum-card"><div class="sum-card-num" style="color:#f59e0b;">'+n+'</div><div class="sum-card-lbl">'+l+'</div><div class="sum-card-sub" style="color:#555;">'+s+'</div></div>').join("")}
   </div>
 
   <div style="background:#fff;border-radius:14px;border:1.5px solid #e4e0d8;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);max-width:560px;">
@@ -1987,13 +2019,38 @@ function renderCost(){
         onmouseover="this.style.background='#d97706'" onmouseout="this.style.background='#f59e0b'">
         Open the Budget Calculator →
       </a>
-      <div style="margin-top:10px;font-size:10px;color:#aaa;">Opens in a new tab · free to use · no login required</div>
+      <div style="margin-top:10px;font-size:10px;color:#666;">Opens in a new tab · free to use · no login required</div>
     </div>
   </div>
 
-  <div style="margin-top:20px;font-size:11px;color:#bbb;line-height:1.6;">
+  <div style="margin-top:20px;font-size:11px;color:#777;line-height:1.6;">
     Default costs sourced from the Wheat Flour Supply Chain Analysis by the Food Fortification Initiative (FFI), State of Haryana, India, December 2016. Costs vary by state and context — use the calculator's Edit costs feature to enter figures that reflect your programme.
   </div>`;
+}
+
+
+function renderMiniMap(sid, color){
+  // Render a compact version of the India SVG with just one state highlighted
+  const el = document.getElementById('sc-mini-map');
+  if(!el) return;
+  // Clone the main SVG and highlight selected state
+  const mainSvg = document.getElementById('india-svg');
+  if(!mainSvg) return;
+  const clone = mainSvg.cloneNode(true);
+  clone.removeAttribute('id');
+  clone.style.width='100%';
+  clone.style.height='auto';
+  clone.style.display='block';
+  // Colour all states neutral, highlight selected
+  clone.querySelectorAll('.sp').forEach(p=>{
+    const baseId=p.id.replace('-inset','');
+    p.style.fill = baseId===sid ? color : '#e8e3da';
+    p.style.opacity = baseId===sid ? '1' : '0.5';
+    p.style.cursor = 'default';
+    // Remove all event listeners by replacing with clone
+  });
+  el.innerHTML='';
+  el.appendChild(clone);
 }
 
 function renderAll(){
